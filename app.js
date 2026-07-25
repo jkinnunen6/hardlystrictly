@@ -47,13 +47,45 @@ async function loadData() {
   $("festivalName").textContent = state.data.name;
 
   // Default day: today's date (local) if it matches a festival day, else first day.
-  const now = new Date();
-  const todayISO = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-  const match = state.data.days.find((d) => d.date === todayISO);
+  const match = state.data.days.find((d) => d.date === todayISODate());
   state.activeDay = match ? match.id : state.data.days[0].id;
+
+  // If the festival isn't actually happening right now (wrong date, or outside
+  // showtimes), "use current time" would show nothing. Drop into planning mode:
+  // preset a real time on the selected day so sets show up immediately.
+  if (!isFestivalLiveNow()) {
+    $("nowToggle").checked = false;
+    $("timePicker").disabled = false;
+    $("timePicker").value = dayFirstSetStr(state.activeDay);
+  }
 
   renderDayTabs();
   renderStageFilter();
+}
+
+function todayISODate() {
+  const n = new Date();
+  return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, "0")}-${String(n.getDate()).padStart(2, "0")}`;
+}
+
+function daySets(dayId) {
+  return state.data.sets.filter((s) => s.day === dayId);
+}
+
+// Earliest set start (as "HH:MM") for a day — used as the default planning time.
+function dayFirstSetStr(dayId) {
+  const sets = daySets(dayId).slice().sort((a, b) => toMinutes(a.start) - toMinutes(b.start));
+  return sets.length ? sets[0].start : "13:00";
+}
+
+// Is a festival set actually playing at the real current moment?
+function isFestivalLiveNow() {
+  const day = state.data.days.find((d) => d.date === todayISODate());
+  if (!day) return false;
+  const t = nowMinutes();
+  return state.data.sets.some(
+    (s) => s.day === day.id && t >= toMinutes(s.start) && t < toMinutes(s.end)
+  );
 }
 
 // ---------- Rendering ----------
@@ -214,12 +246,15 @@ function showResult(pick, others, note) {
 }
 
 function showEmpty() {
+  const usingNow = $("nowToggle").checked;
   $("result").hidden = false;
-  $("resArtist").textContent = "Nobody's on";
+  $("resArtist").textContent = "Nothing on then";
   $("resStage").textContent = "";
   $("resTime").textContent = "";
-  $("resGenre").textContent = "Try another day or clear your stage filter.";
-  $("hint").textContent = "The festival's asleep.";
+  $("resGenre").textContent = usingNow
+    ? "The festival isn't playing at the current time. Uncheck “Use current time” and set an hour, or pick another day."
+    : "No sets at that time. Try a different time, another day, or clear your stage filter.";
+  $("hint").textContent = "Pick a time when the music's on.";
   $("othersBtn").style.display = "none";
   $("others").hidden = true;
 }
