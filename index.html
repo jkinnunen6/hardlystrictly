@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#0b0b12" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Festival 8-Ball</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <header class="topbar">
+      <h1 id="festivalName">Festival 8-Ball</h1>
+      <button id="settingsBtn" class="icon-btn" aria-label="Settings">⚙</button>
+    </header>
+
+    <section class="controls" id="controls">
+      <div class="control-row">
+        <div class="seg" id="dayTabs" role="tablist" aria-label="Festival day"></div>
+      </div>
+      <div class="control-row">
+        <div class="seg mode" id="modeTabs" aria-label="Mode">
+          <button data-mode="single" class="active">Single pick</button>
+          <button data-mode="plan">Plan my evening</button>
+        </div>
+      </div>
+      <div class="control-row time-row">
+        <label class="switch">
+          <input type="checkbox" id="nowToggle" checked />
+          <span id="nowLabel">Use current time</span>
+        </label>
+        <input type="time" id="timePicker" disabled />
+      </div>
+      <div class="control-row">
+        <div class="seg small" id="stageFilter" aria-label="Stages"></div>
+      </div>
+      <div class="control-row" id="mustRow" hidden>
+        <button id="mustBtn" class="ghost-btn wide">★ Choose must-sees (0)</button>
+      </div>
+    </section>
+
+    <section class="ball-stage">
+      <div id="ball" class="ball" role="button" tabindex="0" aria-label="Shake or tap to decide">
+        <div class="ball-window">
+          <div class="triangle" id="triangle">
+            <span id="ballText">SHAKE</span>
+          </div>
+        </div>
+      </div>
+      <p class="hint" id="hint">Shake your phone — or tap the ball</p>
+    </section>
+
+    <section class="result" id="plan" hidden>
+      <div class="plan-card">
+        <div class="plan-head" id="planHead">Your evening</div>
+        <div class="plan-warn" id="planWarn" hidden></div>
+        <ol class="timeline" id="timeline"></ol>
+        <div class="result-actions">
+          <button id="rerollBtn" class="ghost-btn">Re-roll plan</button>
+          <button id="editMustBtn" class="ghost-btn">Edit must-sees</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="result" id="result" hidden>
+      <div class="result-card">
+        <div class="result-label">Go see</div>
+        <div class="result-artist" id="resArtist">—</div>
+        <div class="result-meta">
+          <span id="resStage"></span> · <span id="resTime"></span>
+        </div>
+        <div class="result-genre" id="resGenre"></div>
+        <div class="result-actions">
+          <button id="againBtn" class="ghost-btn">Ask again</button>
+          <button id="othersBtn" class="ghost-btn">See who else is on</button>
+        </div>
+        <ul class="others" id="others" hidden></ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="sheet-backdrop" id="mustSheet" hidden>
+    <div class="sheet tall">
+      <h2>Pick your must-sees</h2>
+      <p>Star the acts you refuse to miss — we'll build the plan around them. <span id="mustDayLabel"></span></p>
+      <div class="lineup" id="lineupList"></div>
+      <button id="closeMust" class="primary-btn">Done</button>
+    </div>
+  </div>
+
+  <div class="sheet-backdrop" id="settingsSheet" hidden>
+    <div class="sheet">
+      <h2>How it works</h2>
+      <p>Pick a day, then either use the current time or set a future time. Shake your phone (or tap the ball) and it reveals one act playing then. Filter by stage if you only want certain areas.</p>
+      <button id="enableMotion" class="primary-btn">Enable shake detection</button>
+      <p class="fine" id="motionStatus"></p>
+      <button id="closeSheet" class="ghost-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

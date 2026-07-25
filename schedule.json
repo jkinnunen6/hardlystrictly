@@ -1,0 +1,513 @@
+{
+  "festival": {
+    "name": "Hardly Strictly Bluegrass 2024",
+    "timezone": "America/Los_Angeles",
+    "days": [
+      {
+        "id": "fri",
+        "label": "Friday",
+        "date": "2024-10-04"
+      },
+      {
+        "id": "sat",
+        "label": "Saturday",
+        "date": "2024-10-05"
+      },
+      {
+        "id": "sun",
+        "label": "Sunday",
+        "date": "2024-10-06"
+      }
+    ],
+    "stages": [
+      {
+        "id": "banjo",
+        "name": "Banjo"
+      },
+      {
+        "id": "rooster",
+        "name": "Rooster"
+      },
+      {
+        "id": "towers",
+        "name": "Towers of Gold"
+      },
+      {
+        "id": "swan",
+        "name": "Swan"
+      },
+      {
+        "id": "arrow",
+        "name": "Arrow"
+      },
+      {
+        "id": "horseshoe",
+        "name": "Horseshoe Hill"
+      }
+    ],
+    "sets": [
+      {
+        "day": "fri",
+        "stage": "banjo",
+        "artist": "Songs From a Gravel Road f: Kelly Willis, Chuck Prophet, Ismay & Steve Earle",
+        "start": "13:00",
+        "end": "13:45"
+      },
+      {
+        "day": "fri",
+        "stage": "banjo",
+        "artist": "Wonder Women of Country",
+        "start": "14:30",
+        "end": "15:20"
+      },
+      {
+        "day": "fri",
+        "stage": "banjo",
+        "artist": "Molly Tuttle & Golden Highway",
+        "start": "16:05",
+        "end": "17:00"
+      },
+      {
+        "day": "fri",
+        "stage": "banjo",
+        "artist": "Glen Hansard",
+        "start": "17:50",
+        "end": "19:00"
+      },
+      {
+        "day": "fri",
+        "stage": "towers",
+        "artist": "Jessica Pratt",
+        "start": "13:05",
+        "end": "13:55"
+      },
+      {
+        "day": "fri",
+        "stage": "towers",
+        "artist": "The Milk Carton Kids",
+        "start": "14:45",
+        "end": "15:45"
+      },
+      {
+        "day": "fri",
+        "stage": "towers",
+        "artist": "Sleater-Kinney",
+        "start": "16:45",
+        "end": "17:55"
+      },
+      {
+        "day": "fri",
+        "stage": "swan",
+        "artist": "Ibibio Sound Machine",
+        "start": "13:55",
+        "end": "14:45"
+      },
+      {
+        "day": "fri",
+        "stage": "swan",
+        "artist": "Devendra Banhart",
+        "start": "15:45",
+        "end": "16:45"
+      },
+      {
+        "day": "fri",
+        "stage": "swan",
+        "artist": "Cat Power Sings Dylan ’66",
+        "start": "17:55",
+        "end": "19:00"
+      },
+      {
+        "day": "fri",
+        "stage": "arrow",
+        "artist": "Lindsay Lou",
+        "start": "13:45",
+        "end": "14:30"
+      },
+      {
+        "day": "fri",
+        "stage": "arrow",
+        "artist": "Charlie Overbey",
+        "start": "15:20",
+        "end": "16:05"
+      },
+      {
+        "day": "fri",
+        "stage": "arrow",
+        "artist": "Sean McConnell",
+        "start": "17:00",
+        "end": "17:50"
+      },
+      {
+        "day": "fri",
+        "stage": "horseshoe",
+        "artist": "Matt the Electrician",
+        "start": "14:35",
+        "end": "15:20"
+      },
+      {
+        "day": "fri",
+        "stage": "horseshoe",
+        "artist": "Viv & Riley",
+        "start": "15:50",
+        "end": "16:40"
+      },
+      {
+        "day": "fri",
+        "stage": "horseshoe",
+        "artist": "Sgt. Splendor",
+        "start": "18:05",
+        "end": "18:55"
+      },
+      {
+        "day": "sat",
+        "stage": "banjo",
+        "artist": "Laurie Lewis & The Right Hands",
+        "start": "12:45",
+        "end": "13:40"
+      },
+      {
+        "day": "sat",
+        "stage": "banjo",
+        "artist": "Alison Brown",
+        "start": "14:20",
+        "end": "15:20"
+      },
+      {
+        "day": "sat",
+        "stage": "banjo",
+        "artist": "Mavis Staples",
+        "start": "16:05",
+        "end": "16:55"
+      },
+      {
+        "day": "sat",
+        "stage": "banjo",
+        "artist": "Steve Earle",
+        "start": "17:45",
+        "end": "19:00"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "The Red Dirt Boys",
+        "start": "11:30",
+        "end": "11:50"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Jobi Riccio",
+        "start": "12:00",
+        "end": "12:50"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Teddy Thompson",
+        "start": "13:00",
+        "end": "13:50"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Dom Flemons",
+        "start": "14:00",
+        "end": "14:50"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Carlene Carter",
+        "start": "15:00",
+        "end": "16:00"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Buddy Miller",
+        "start": "16:15",
+        "end": "17:15"
+      },
+      {
+        "day": "sat",
+        "stage": "rooster",
+        "artist": "Jackie Greene & Anders Osborne",
+        "start": "18:00",
+        "end": "19:00"
+      },
+      {
+        "day": "sat",
+        "stage": "towers",
+        "artist": "Levitation Room",
+        "start": "11:00",
+        "end": "11:40"
+      },
+      {
+        "day": "sat",
+        "stage": "towers",
+        "artist": "Fruition",
+        "start": "12:25",
+        "end": "13:15"
+      },
+      {
+        "day": "sat",
+        "stage": "towers",
+        "artist": "Robyn Hitchcock",
+        "start": "14:05",
+        "end": "14:55"
+      },
+      {
+        "day": "sat",
+        "stage": "towers",
+        "artist": "Dave Alvin & Jimmie Dale Gilmore w/ The Guilty Ones",
+        "start": "15:50",
+        "end": "16:50"
+      },
+      {
+        "day": "sat",
+        "stage": "towers",
+        "artist": "Greensky Bluegrass",
+        "start": "17:55",
+        "end": "19:00"
+      },
+      {
+        "day": "sat",
+        "stage": "swan",
+        "artist": "Moonalice",
+        "start": "13:15",
+        "end": "14:05"
+      },
+      {
+        "day": "sat",
+        "stage": "swan",
+        "artist": "Haley Heynderickx",
+        "start": "14:55",
+        "end": "15:50"
+      },
+      {
+        "day": "sat",
+        "stage": "swan",
+        "artist": "Cunningham Bird",
+        "start": "16:50",
+        "end": "17:55"
+      },
+      {
+        "day": "sat",
+        "stage": "arrow",
+        "artist": "Marco and the Polos",
+        "start": "13:35",
+        "end": "14:20"
+      },
+      {
+        "day": "sat",
+        "stage": "arrow",
+        "artist": "Sam Reider and the Human Hands",
+        "start": "15:15",
+        "end": "16:00"
+      },
+      {
+        "day": "sat",
+        "stage": "arrow",
+        "artist": "Rev. Peyton’s Big Damn Band",
+        "start": "16:55",
+        "end": "17:45"
+      },
+      {
+        "day": "sat",
+        "stage": "horseshoe",
+        "artist": "Robyn Hitchcock: Excerpts From “How I Got There & Why I Never Left”",
+        "start": "11:40",
+        "end": "12:25"
+      },
+      {
+        "day": "sat",
+        "stage": "horseshoe",
+        "artist": "Nigel Wearne & The Spectres",
+        "start": "13:15",
+        "end": "14:05"
+      },
+      {
+        "day": "sat",
+        "stage": "horseshoe",
+        "artist": "John Cooper Clarke",
+        "start": "14:55",
+        "end": "15:45"
+      },
+      {
+        "day": "sat",
+        "stage": "horseshoe",
+        "artist": "Willi Carlisle",
+        "start": "16:50",
+        "end": "17:45"
+      },
+      {
+        "day": "sun",
+        "stage": "banjo",
+        "artist": "Tony Trischka’s Earl Jam",
+        "start": "12:45",
+        "end": "13:35"
+      },
+      {
+        "day": "sun",
+        "stage": "banjo",
+        "artist": "Bobby Rush",
+        "start": "14:20",
+        "end": "15:05"
+      },
+      {
+        "day": "sun",
+        "stage": "banjo",
+        "artist": "Aoife O’Donovan w/ Hawktail & The San Francisco Girls Chorus",
+        "start": "15:50",
+        "end": "16:45"
+      },
+      {
+        "day": "sun",
+        "stage": "banjo",
+        "artist": "Emmylou Harris",
+        "start": "17:45",
+        "end": "19:00"
+      },
+      {
+        "day": "sun",
+        "stage": "rooster",
+        "artist": "Miko Marks",
+        "start": "11:00",
+        "end": "11:45"
+      },
+      {
+        "day": "sun",
+        "stage": "rooster",
+        "artist": "Ramblin’ Jack Elliott",
+        "start": "12:30",
+        "end": "13:10"
+      },
+      {
+        "day": "sun",
+        "stage": "rooster",
+        "artist": "Songwriter Circle f: Peter Case, Carsie Blanton, Teddy Thompson & Melissa Carper",
+        "start": "13:50",
+        "end": "15:15"
+      },
+      {
+        "day": "sun",
+        "stage": "rooster",
+        "artist": "Brandy Clark",
+        "start": "15:55",
+        "end": "16:45"
+      },
+      {
+        "day": "sun",
+        "stage": "rooster",
+        "artist": "The Infamous Stringdusters",
+        "start": "17:50",
+        "end": "19:00"
+      },
+      {
+        "day": "sun",
+        "stage": "towers",
+        "artist": "The Bones of J.r. Jones",
+        "start": "11:00",
+        "end": "11:40"
+      },
+      {
+        "day": "sun",
+        "stage": "towers",
+        "artist": "James Hunter",
+        "start": "12:25",
+        "end": "13:15"
+      },
+      {
+        "day": "sun",
+        "stage": "towers",
+        "artist": "Big Star Quintet’s “Radio City” 50th Anniversary",
+        "start": "14:05",
+        "end": "14:55"
+      },
+      {
+        "day": "sun",
+        "stage": "towers",
+        "artist": "Yo La Tengo",
+        "start": "15:45",
+        "end": "16:45"
+      },
+      {
+        "day": "sun",
+        "stage": "towers",
+        "artist": "The Wood Brothers",
+        "start": "17:55",
+        "end": "19:00"
+      },
+      {
+        "day": "sun",
+        "stage": "swan",
+        "artist": "Aj Lee & Blue Summit",
+        "start": "13:15",
+        "end": "14:05"
+      },
+      {
+        "day": "sun",
+        "stage": "swan",
+        "artist": "Dakhabrakha",
+        "start": "14:55",
+        "end": "15:45"
+      },
+      {
+        "day": "sun",
+        "stage": "swan",
+        "artist": "Patti Smith",
+        "start": "16:50",
+        "end": "17:55"
+      },
+      {
+        "day": "sun",
+        "stage": "arrow",
+        "artist": "Combo Tezeta",
+        "start": "12:00",
+        "end": "12:45"
+      },
+      {
+        "day": "sun",
+        "stage": "arrow",
+        "artist": "Jon Muq",
+        "start": "13:35",
+        "end": "14:20"
+      },
+      {
+        "day": "sun",
+        "stage": "arrow",
+        "artist": "Wreckless Strangers",
+        "start": "15:05",
+        "end": "15:50"
+      },
+      {
+        "day": "sun",
+        "stage": "arrow",
+        "artist": "Alice Gerrard",
+        "start": "16:50",
+        "end": "17:40"
+      },
+      {
+        "day": "sun",
+        "stage": "horseshoe",
+        "artist": "Alisa Amador: “How the Spirit Moves Through Breaking the Thermometer”",
+        "start": "13:15",
+        "end": "14:05"
+      },
+      {
+        "day": "sun",
+        "stage": "horseshoe",
+        "artist": "Ustad Noor Baksh",
+        "start": "14:55",
+        "end": "15:45"
+      },
+      {
+        "day": "sun",
+        "stage": "horseshoe",
+        "artist": "Abby Posner",
+        "start": "16:50",
+        "end": "17:45"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Festival 8-Ball",
+  "short_name": "8-Ball",
+  "description": "Shake your phone to decide which festival act to go see.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0b12",
+  "theme_color": "#0b0b12",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
